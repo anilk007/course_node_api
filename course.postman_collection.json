@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "60039c61-c5ea-473f-aa82-0e2cf64594e6",
+		"name": "course",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1562329"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4500/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4500",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add course",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 701,\r\n \t\"title\": \"wah tips\",\r\n \t\"slug\": \"best wah tips\",\r\n \t\"authorId\": 1,\r\n \t\"category\": \"exam\"\r\n }"
+				},
+				"url": {
+					"raw": "http://localhost:3004/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get courses",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 701,\r\n \t\"title\": \"wah tips\",\r\n \t\"slug\": \"best wah tips\",\r\n \t\"authorId\": 1,\r\n \t\"category\": \"exam\"\r\n }"
+				},
+				"url": {
+					"raw": "http://localhost:3004/courses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"courses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "view course",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n \t\"title\": \"updated exam tips\",\r\n \t\"slug\": \"best exam tips\",\r\n \t\"authorId\": 1,\r\n \t\"category\": \"exam\"\r\n }"
+				},
+				"url": {
+					"raw": "http://localhost:3004/courses/700",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"courses",
+						"700"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update course",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \r\n \t\"title\": \"updated exam tips\",\r\n \t\"slug\": \"best exam tips\",\r\n \t\"authorId\": 1,\r\n \t\"category\": \"exam\"\r\n }"
+				},
+				"url": {
+					"raw": "http://localhost:3004/courses/700",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"courses",
+						"700"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete course",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:3004/courses/701",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3004",
+					"path": [
+						"courses",
+						"701"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
